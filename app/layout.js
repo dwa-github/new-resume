@@ -1,15 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
+
 import "./globals.css";
+import Navbar from "../components/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "My New Resume",
@@ -19,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet" />
+      </head>
+      <body>
+        <Navbar />
         {children}
       </body>
     </html>

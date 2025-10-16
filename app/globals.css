@@ -1,11 +1,51 @@
+/* --- Modern CSS Reset --- */
+html {
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-body-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, ol {
+  list-style: none;
+}
+
+/* --- Custom Global Styles --- */
 :root {
-   /* Surface layers */
+  /* Surface layers */
   --text-primary: #e6eaec;
   --text-secondary: #b3c1c5;
   --text-tertiary: #81979e;
   --text-quaternary: #4f6d77;
 
- 
   /* Text palette */
   --surface-primary: #022630;
   --surface-secondary: #032f3c;
@@ -14,31 +54,98 @@
 
   /* Accent */
   --cta-accent: #f26444;
+  --cta-accent-hover: #d94d2a;
+
+  /* Typography font families */
+  --font-title-family: 'Playfair Display', serif;
+  --font-body-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
-
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+ul, ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+ul > li, ol > li {
+  font-family: var(--font-body-family);
+  font-size: 1rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
-body {
+main {
   color: var(--surface-primary);
   background: var(--text-primary);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 1600px;
+  max-width: 100vw;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1 {
+  font-family: var(--font-title-family);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+h2 {
+  font-family: var(--font-title-family);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-family: var(--font-title-family);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+h4 {
+  font-family: var(--font-title-family);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+h5 {
+  font-family: var(--font-title-family);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+small {
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* --- Utility Classes --- */
+.title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+}
+.subtitle {
+  font-size: 2rem;
+  color: var(--text-secondary);
+}
+.heading {
+  font-size: 1.5rem;
+  color: var(--text-tertiary);
+}
+.subheading {
+  font-size: 1.2rem;
+  color: var(--text-quaternary);
+}
+.label {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+.body {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+.caption {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }

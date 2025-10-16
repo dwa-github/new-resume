@@ -1,0 +1,49 @@
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--surface-primary);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 1rem;
+}
+.brand {
+  font-family: var(--font-title-family);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.exportBtn {
+  background: var(--cta-accent);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-family: var(--font-title-family);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.exportBtn:hover {
+  background: var(--cta-accent-hover);
+}
+.langSelect {
+  font-size: 1rem;
+  font-family: var(--font-body-family);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid var(--surface-tertiary);
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+}
