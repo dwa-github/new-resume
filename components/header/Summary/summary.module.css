@@ -1,1 +1,22 @@
-/* Summary styles */
+.summaryContainer {
+  text-align: left;
+}
+
+.titleWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--surface-primary);
+}
+
+.summaryContainer h1 {
+  margin-bottom: 0.5rem;
+  color: var(--cta-accent);
+}
+
+.summary {
+  margin-top: 1rem;
+  color: var(--surface-tertiary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

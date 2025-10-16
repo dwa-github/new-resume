@@ -1,8 +1,22 @@
-// Summary block
-export default function Summary() {
+import styles from './summary.module.css';
+import { User } from 'lucide-react';
+import contentStyles from '../../content/content.module.css';
+
+export default function Summary({ className }) {
+  const combinedClassName = `${className || ''} ${styles.summaryContainer}`;
+
   return (
-    <div className="summary">
-      {/* Summary text goes here */}
+    <div className={combinedClassName}>
+      <h2 className={`subtitle ${styles.titleWithIcon}`}>
+        <span className={contentStyles.iconWrapper}>
+          <User size={28} />
+        </span>
+        <span>About Me</span>
+      </h2>
+      <p className={styles.summary}>
+        A passionate and creative full-stack developer with a knack for building
+        elegant, efficient, and scalable web applications.
+      </p>
     </div>
   );
 }

@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   font-family: var(--font-body-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,29 +58,13 @@ ul, ol {
   /* Typography font families */
   --font-title-family: 'Playfair Display', serif;
   --font-body-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
+  /* Other variables */
+  --border-radius: 8px;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
-ul, ol {
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-}
-ul > li, ol > li {
-  font-family: var(--font-body-family);
-  font-size: 1rem;
-  color: var(--text-primary);
-  line-height: 1.6;
-  margin-bottom: 0.5rem;
-}
-
-main {
-  color: var(--surface-primary);
-  background: var(--text-primary);
-  width: 1600px;
-  max-width: 100vw;
-  min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* The main layout is handled by page.module.css, so this global main style is not needed */
 
 h1 {
   font-family: var(--font-title-family);
@@ -123,29 +106,29 @@ small {
 /* --- Utility Classes --- */
 .title {
   font-size: 2.5rem;
-  color: var(--text-primary);
+  color: var(--surface-primary);
 }
 .subtitle {
   font-size: 2rem;
-  color: var(--text-secondary);
+  color: var(--surface-secondary);
 }
 .heading {
   font-size: 1.5rem;
-  color: var(--text-tertiary);
+  color: var(--surface-tertiary);
 }
 .subheading {
   font-size: 1.2rem;
-  color: var(--text-quaternary);
+  color: var(--surface-quaternary);
 }
 .label {
   font-size: 1rem;
-  color: var(--text-primary);
+  color: var(--surface-primary);
 }
 .body {
   font-size: 1rem;
-  color: var(--text-primary);
+  color: var(--surface-primary);
 }
 .caption {
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--surface-secondary);
 }

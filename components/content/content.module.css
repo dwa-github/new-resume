@@ -1,0 +1,33 @@
+/* Styles for the container within the Content component */
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Adds space between the Experience, Education, etc. sections */
+}
+
+.contentSection h2 {
+  color: var(--cta-accent);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.date {
+  color: var(--surface-tertiary);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.entry ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}

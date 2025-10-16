@@ -1,6 +1,46 @@
-.page {
+.mainLayout {
+  display: grid;
+  grid-template-areas:
+    "avatar  summary"
+    "sidebar content";
+  grid-template-columns: 350px 1fr; /* Sidebar width and flexible content width */
+  grid-template-rows: auto 1fr; /* Header height and flexible content height */
+  gap: 0; /* No gap between components */
+  width: 1600px;
+  max-width: 100vw;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0; /* No padding on the main container */
+  background-color: var(--text-primary); /* The light background for the whole panel */
+  color: var(--surface-secondary); /* Set the default text color to secondary */
   min-height: 100vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--text-secondary);
+  overflow: hidden; /* Ensures children conform to the rounded corners */
 }
+
+.avatarArea {
+  grid-area: avatar;
+  padding: 2rem;
+  border-bottom: 1px solid var(--text-secondary);
+  border-right: 1px solid var(--text-secondary);
+}
+
+.summaryArea {
+  grid-area: summary;
+  padding: 2rem;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.sidebarArea {
+  grid-area: sidebar;
+  padding: 2rem;
+  border-right: 1px solid var(--text-secondary);
+}
+
+.contentArea {
+  grid-area: content;
+  padding: 2rem;
+}
+
+/* The .page class seems unused in page.js, you may want to remove it */
