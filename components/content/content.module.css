@@ -1,9 +1,4 @@
-.contentHeader {
-  padding: 2rem;
-  border-bottom: 1px solid var(--text-secondary);
-}
-
-.contentBody {
+.contentContainer {
   padding: 2rem;
   display: flex;
   flex-direction: column;

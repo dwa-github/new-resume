@@ -105,12 +105,12 @@ small {
 
 /* --- Utility Classes --- */
 .title {
-  font-size: 2.5rem;
-  color: var(--surface-primary);
+  font-size: 3.5rem;
+  color: var(--surface-secondary);
 }
 .subtitle {
   font-size: 2rem;
-  color: var(--surface-secondary);
+  color: var(--surface-tertiary);
 }
 .heading {
   font-size: 1.5rem;
@@ -121,8 +121,11 @@ small {
   color: var(--surface-quaternary);
 }
 .label {
+  font-weight: 600;
   font-size: 1rem;
-  color: var(--surface-primary);
+  color: var(--surface-quaternary);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
 }
 .body {
   font-size: 1rem;
@@ -131,4 +134,10 @@ small {
 .caption {
   font-size: 0.9rem;
   color: var(--surface-secondary);
+}
+
+.headline {
+  font-size: 1.3rem;
+  color: var(--surface-quaternary);
+  font-weight: 500;
 }

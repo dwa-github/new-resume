@@ -1,17 +1,25 @@
 .summaryContainer {
-  text-align: left;
-}
-
-.titleWithIcon {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: var(--surface-primary);
+  flex-direction: column;
+  gap: 0.5rem; /* Space between heading and content */
 }
 
-.summary {
-  margin-top: 1rem;
-  color: var(--surface-tertiary);
-  font-size: 1.1rem;
-  line-height: 1.6;
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: var(--cta-accent);
+  color: var(--text-primary);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  border: 1px solid var(--surface-quaternary);
+  margin-right: 0.75rem;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

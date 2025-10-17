@@ -1,7 +1,8 @@
 .headerContainer {
+  padding: 2rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 1.5rem; 
+  border-bottom: 1px solid var(--text-secondary);
 }

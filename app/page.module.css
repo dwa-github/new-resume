@@ -23,6 +23,9 @@
   border-right: 1px solid var(--text-secondary);
 }
 
-.contentArea {
+.mainColumn {
   grid-area: content;
+  display: flex;
+  flex-direction: column;
+  /* The gap between Header and Content will be handled by Header's internal gap */
 }

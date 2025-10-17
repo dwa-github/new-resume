@@ -1,0 +1,23 @@
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: flex-start;
+  align-items: center; 
+  gap: 3rem; /* Increased space between contact items */
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem; /* Space between icon and text */
+  text-decoration: none;
+}
+
+.icon {
+  display: flex; /* Ensures icon is vertically centered */
+  align-items: center;
+  color: var(--cta-accent);
+}
