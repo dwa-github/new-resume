@@ -7,6 +7,7 @@ export default function Summary({ className }) {
 
   return (
     <div className={combinedClassName}>
+      <h1 className="title">Your Name</h1>
       <h2 className={`subtitle ${styles.titleWithIcon}`}>
         <span className={contentStyles.iconWrapper}>
           <User size={28} />

@@ -1,4 +1,4 @@
-import styles from './experience.module.css';
+import styles from './Experience.module.css';
 import parentStyles from '../content.module.css';
 import { Briefcase } from 'lucide-react';
 
@@ -11,7 +11,7 @@ export default function Experience() {
         </span>
         <span>Experience</span>
       </h2>
-      <div className={parentStyles.entry}>
+      <div className={`${parentStyles.entry} ${styles.experienceEntry}`}>
         <h3 className="heading">Senior Software Engineer @ Tech Corp</h3>
         <p className={parentStyles.date}>Jan 2021 - Present</p>
         <ul>

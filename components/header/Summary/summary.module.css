@@ -9,11 +9,6 @@
   color: var(--surface-primary);
 }
 
-.summaryContainer h1 {
-  margin-bottom: 0.5rem;
-  color: var(--cta-accent);
-}
-
 .summary {
   margin-top: 1rem;
   color: var(--surface-tertiary);

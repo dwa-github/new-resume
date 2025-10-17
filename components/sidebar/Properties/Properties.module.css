@@ -6,12 +6,10 @@
   margin-right: 0.75rem; /* Space between icon and title */
 }
 
-.skillsSection {
-  /* Let the parent container (Sidebar) control the spacing.
-     This component only needs to lay out its own children. */
+.propertiesSection {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Space between the "Skills" title and the list of skills */
+  gap: 0.5rem; /* Space between the "Properties" title and the list of properties */
 }
 
 .list {

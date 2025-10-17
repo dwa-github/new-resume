@@ -1,40 +1,7 @@
 .sidebarContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.section h3 {
-  color: var(--cta-accent);
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--surface-quaternary);
-  padding-bottom: 0.5rem;
-}
-
-.contactList {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.contactList li {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: var(--surface-secondary);
-}
-
-.skillsList {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.divider {
-  border-top: 1px solid var(--surface-quaternary);
-  opacity: 0.2;
+  padding: 2rem; /* Consistent padding for the whole sidebar */
+  gap: 2rem;     /* Space ONLY between the child components */
+  border-right: 1px solid var(--text-secondary);
 }

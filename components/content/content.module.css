@@ -1,16 +1,35 @@
-/* Styles for the container within the Content component */
-.contentContainer {
+.contentHeader {
+  padding: 2rem;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.contentBody {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem; /* Adds space between the Experience, Education, etc. sections */
 }
 
+/* This style is for the individual sections like Education, Experience */
 .contentSection h2 {
   color: var(--cta-accent);
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--cta-accent);
+  color: var(--text-primary);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  border: 1px solid var(--surface-quaternary);
 }
 
 .entry {
