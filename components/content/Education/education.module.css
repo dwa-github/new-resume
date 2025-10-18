@@ -1,5 +1,28 @@
 /* Styles specific to the Education component */
-.educationEntry {
+.contentSection {
   /* Add unique styles for education entries here if needed, e.g., margin-bottom, padding, etc. */
 }
+
+.educationEntry {
+  margin-bottom: 1.5rem;
+}
 /* Education styles */
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: var(--cta-accent);
+  color: var(--text-primary);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  border: 1px solid var(--surface-quaternary);
+  margin-right: 0.75rem;
+}
+
+.year {
+  font-weight: 600;
+  color: var(--cta-accent);
+  margin-bottom: 0.25rem;
+}

@@ -1,4 +1,49 @@
 /* Styles specific to the Experience component */
 .experienceEntry {
-  /* Add unique styles for experience entries here if needed */
+  margin-bottom: 1.5rem;
+}
+
+.roleEntry:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: var(--cta-accent);
+  color: var(--text-primary);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  border: 1px solid var(--surface-quaternary);
+  margin-right: 0.75rem;
+}
+
+.year {
+  font-weight: 600;
+  color: var(--cta-accent);
+  white-space: nowrap;
+}
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem; /* Space between description and task list */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.taskItem {
+  display: flex;
+  align-items: flex-start; /* Align icon with the start of the text line */
+  gap: 0.5rem;
+  color: var(--surface-primary);
+}
+
+.taskIcon {
+  flex-shrink: 0;
+  color: var(--cta-accent);
+  margin-top: 0.15rem; /* Adjust to vertically align with text */
 }
